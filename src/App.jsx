@@ -22,6 +22,7 @@ function WeatherApp() {
     setWeather(null)
     try {
       const key = import.meta.env.VITE_WEATHER_API_KEY;
+      console.log(import.meta.env.VITE_WEATHER_API_KEY);
       const res = await fetch(
         `https://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent(
           city
